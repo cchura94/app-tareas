@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Actividad from "../views/Actividad.vue";
 import Contacto from "../views/Contacto.vue";
+import Productos from "../views/Productos.vue";
 
 const routes = [
   {
@@ -31,7 +32,12 @@ const routes = [
     path: "/blog",
     name: "Blog",
     component: () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue')
-  }
+  },
+  {
+    path: "/productos",
+    name: "Producto",
+    component: Productos
+  },
 ]
 
 const router = createRouter({
